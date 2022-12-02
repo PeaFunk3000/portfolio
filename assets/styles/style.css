@@ -52,24 +52,24 @@ body {
 }
 
 .title h1 {
-    color: beige;
+    color: #222;
+    background: #E9E2D0;
     font-size: 60px;
+    border-radius: 10px;
     font-weight: bold;
 }
 
 .headshot {
-    background-image: url("../imgs/Cadet.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headshot img {
     border-radius: 100px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    z-index: 10;
     filter: sepia(1);
 }
+    
 
 .navbar {
     display: flex;
@@ -80,12 +80,66 @@ body {
 
 .navbar a {
     font-weight: bold;
-    color: black;
+    color: #222;
     padding-left: 10px;
     padding-right: 10px;
     text-decoration: none;
     font-size: 25px;
-    height: 25px;
+    height: 30px;
     background: #E9E2D0;
     border-radius: 10px;
+    
+}
+
+.gridtion {
+    width:100%;
+    height: 225px;
+    display: grid;
+    margin-top: 50px;
+    margin-right: 50px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "about-me blurb";
+
+}
+
+#about-me {
+    grid-area: about-me;
+}
+
+#blurb {
+    grid-area: blurb;
+}
+
+#about-me {
+    grid-area: about-me;
+}
+
+#blurb {
+    grid-area: blurb;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #E9E2D0;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 5px;
+
+}
+
+.card a {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+.card h2 {
+    border-bottom: 5px solid #222;
+    color: #222;
+    font-size: 25px;
 }
