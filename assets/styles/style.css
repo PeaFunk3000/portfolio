@@ -2,54 +2,64 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
-  a,p, h1, h2, h3, h4, h5 {
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: courier
-  }
-  
-  .gridhead {
+}
+
+body {
+    background: #222;
+}
+
+.gridhead {
     height: 200px;
     margin-top: 25px;
     background: #999955;
     background-image: linear-gradient(#DAB046 20%, #D73B25 20%, #D73B25 40%, #C71B25 40%, #C71B25 60%, #961A39 60%, #961A39 80%, #601035 80%);
     width: 100%;
     display: grid;
-    grid-template-columns: 200px, 1fr;
+    grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-        "me PeaFUNK"
-        "me navi";
-  }
+    grid-template-areas:
+        "LEGO PeaFUNK"
+        "LEGO navi";
+}
 
-  #me {
-    grid-area: me;
-  }
+#LEGO {
+    grid-area: LEGO;
+}
 
-  #PeaFUNK {
+#PeaFUNK {
     grid-area: PeaFUNK;
-  }
+}
 
-  #navi {
+#navi {
     grid-area: navi;
-  }
+}
 
 .title {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
 }
 
 .title h1 {
-    color: white;
+    color: beige;
     font-size: 60px;
     font-weight: bold;
 }
 
 .headshot {
     background-image: url("../imgs/Cadet.png");
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-position: center;
     max-width: 200px;
     border-radius: 100px;
@@ -65,14 +75,12 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
-    
 
 }
 
 .navbar a {
     font-weight: bold;
-    color:black;
+    color: black;
     padding-left: 10px;
     padding-right: 10px;
     text-decoration: none;
@@ -80,5 +88,4 @@
     height: 25px;
     background: #E9E2D0;
     border-radius: 10px;
-    box-shadow: -20px 0 35px -25px black, 20px 0 35px -25px black;
 }
