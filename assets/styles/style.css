@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 a,
@@ -55,6 +54,8 @@ body {
 .title h1 {
     color: #222;
     background: #E9E2D0;
+    background-image: url("../imgs/paper-tex.webp");
+    filter: sepia(1);
     font-size: 60px;
     border-radius: 10px;
     font-weight: bold;
@@ -87,6 +88,8 @@ body {
     font-size: 25px;
     height: 30px;
     background: #E9E2D0;
+    background-image: url("../imgs/paper-tex.webp");
+    filter: sepia(1);
     border-radius: 10px;
 
 }
@@ -104,21 +107,18 @@ body {
 
 }
 
-#about-me {
-    grid-area: about-me;
-}
-
 #blurb {
     grid-area: blurb;
+    background-image: url("../imgs/paper-tex.webp");
+    filter: sepia(1);
 }
 
 #about-me {
     grid-area: about-me;
+    background-image: url("../imgs/paper-tex.webp");
+    filter: sepia(1);
 }
 
-#blurb {
-    grid-area: blurb;
-}
 
 .card-left {
     display: flex;
@@ -149,10 +149,88 @@ body {
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 10px;
+    font-weight: bold;
 }
 
 .card-left h2 {
     border-bottom: 5px solid #222;
     color: #222;
     font-size: 25px;
+}
+
+.gridtion2 {
+    width: 100%;
+    display: grid;
+    margin-top: 50px;
+    margin-right: 50px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "my-work work-grid";
+}
+
+#my-work {
+    grid-area: my-work;
+    background-image: url("../imgs/paper-tex.webp");
+    filter: sepia(1);
+
+}
+
+#work-grid {
+    grid-area: work-grid;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 5px;
+    background-color: #ffffd9;
+}
+.gridticle {
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 250px 250px 250px; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "research illustration illustration"
+        "design illustration illustration"
+        "design web-dev web-dev"
+        
+}
+
+#illustration {
+    grid-area: illustration;
+}
+
+#design {
+    grid-area: design;
+}
+
+#web-dev {
+    grid-area: web-dev;
+    background-image: url("");
+}
+
+#research {
+    grid-area: research;
+    background-image: url("");
+}
+
+.gridticle-card { 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+}
+
+.heading {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(0,0,0,0.7);
+    padding: 15px;
+    height: 25px;
+    color: #ffffd9;
+    font-size: 18px;
+    font-weight: bold;
 }
