@@ -197,6 +197,7 @@ body {
         
 }
 
+
 #illustration {
     grid-area: illustration;
     background-image: url("../imgs/toad.jpg")
@@ -233,11 +234,12 @@ body {
 }
 
 .heading {
-    font-family: 'Courier New', Courier, monospace;
     background-color: rgba(0,0,0,0.7);
     padding: 15px;
     height: 25px;
     color: #ffffd9;
+    font-family: 'Courier New', Courier, monospace;    
     font-size: 18px;
     font-weight: bold;
+    text-decoration: none;
 }
