@@ -48,7 +48,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 .title h1 {
@@ -150,6 +150,7 @@ body {
     margin-right: 50px;
     font-weight: bold;
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .card-left h2 {
@@ -183,18 +184,19 @@ body {
     border-radius: 5px;
     background-color: #ffffd9;
 }
+
 .gridticle {
     margin-left: 50px;
     margin-right: 50px;
     border-radius: 5px;
     display: grid;
-    grid-template-rows: 300px 300px 300px ; 
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
         "research illustration illustration "
         "design illustration illustration "
         "design web-dev web-dev"
-        
+
 }
 
 
@@ -223,7 +225,7 @@ body {
     background-image: url();
 }
 
-.gridticle-card { 
+.gridticle-card {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -235,11 +237,11 @@ body {
 }
 
 .heading {
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 15px;
     height: 25px;
     color: #ffffd9;
-    font-family: Courier; 
+    font-family: Courier;
     font-size: 18px;
     font-weight: bold;
 }
