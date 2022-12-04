@@ -245,3 +245,26 @@ body {
     font-size: 18px;
     font-weight: bold;
 }
+
+.gridtion3 {
+    width: 100%;
+    height: 225px;
+    display: grid;
+    margin-top: 50px;
+    margin-right: 50px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "contact-me contact-bar" ;
+
+}
+
+#contact-me {
+    grid-area: contact-me;
+    background-image: url("../imgs/paper-tex.webp");
+    filter: sepia(1);
+}
+
+#contact-bar {
+    grid-area: contact-bar;
+}
