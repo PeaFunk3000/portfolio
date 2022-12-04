@@ -23,7 +23,6 @@ body {
     margin-top: 25px;
     background: #999955;
     background-image: linear-gradient(#DAB046 20%, #D73B25 20%, #D73B25 40%, #C71B25 40%, #C71B25 60%, #961A39 60%, #961A39 80%, #601035 80%);
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 1fr;
@@ -48,7 +47,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin-top: 50px; */
 }
 
 .title h1 {
@@ -244,4 +242,61 @@ body {
     font-family: Courier;
     font-size: 18px;
     font-weight: bold;
+}
+
+.gridtion3 {
+    width: 100%;
+    height: 125px;
+    display: grid;
+    margin-top: 50px;
+    margin-right: 50px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "contact-me contact-bar";
+
+}
+
+#contact-me {
+    grid-area: contact-me;
+    background-image: url("../imgs/paper-tex.webp");
+    filter: sepia(1);
+}
+
+#contact-bar {
+    grid-area: contact-bar;
+}
+
+.contactbar {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url("../imgs/paper-tex.webp");
+    filter: sepia(1);
+
+}
+
+.contacticon img {
+    max-width: 75px;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #999955;
+    background-image: linear-gradient(#DAB046 20%, #D73B25 20%, #D73B25 40%, #C71B25 40%, #C71B25 60%, #961A39 60%, #961A39 80%, #601035 80%);
+}
+
+footer h4 {
+    color: #ffffd9;
+
 }
