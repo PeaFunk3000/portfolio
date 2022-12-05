@@ -89,7 +89,10 @@ body {
     background-image: url("../imgs/paper-tex.webp");
     filter: sepia(1);
     border-radius: 10px;
+}
 
+.navbar a:hover {
+    border-bottom: solid 5px #222;
 }
 
 .gridtion {
@@ -189,14 +192,12 @@ body {
     border-radius: 5px;
     display: grid;
     grid-template-rows: 300px 300px 300px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-        "research illustration illustration "
-        "design illustration illustration "
-        "design web-dev web-dev"
-
+        "illustration illustration illustration research research"
+        "illustration illustration illustration design design"
+        "web-dev web-dev web-dev design design"
 }
-
 
 #illustration {
     grid-area: illustration;
@@ -229,19 +230,26 @@ body {
     background-repeat: no-repeat;
     margin: 10px;
     cursor: pointer;
-    display: grid;
-    align-content: end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
     text-decoration: none;
 }
 
-.heading {
+.gridticle-card:hover {
+    border: solid 3px #222;
+}
+
+.gridticle-heading {
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 15px;
+    padding: 10px;
     height: 25px;
+    width: 165px;
     color: #ffffd9;
     font-family: Courier;
     font-size: 18px;
     font-weight: bold;
+    border-bottom: solid 5px #961A39;
 }
 
 .gridtion3 {
@@ -284,6 +292,10 @@ body {
     max-width: 75px;
 }
 
+.contacticon img:hover {
+    border-bottom: solid 3px #222;
+}
+
 footer {
     width: 100%;
     height: 100px;
@@ -298,5 +310,4 @@ footer {
 
 footer h4 {
     color: #ffffd9;
-
 }
