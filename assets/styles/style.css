@@ -201,7 +201,7 @@ body {
 
 #illustration {
     grid-area: illustration;
-    background-image: url("../imgs/toad.jpg")
+    background-image: url("../imgs/illus.webp")
 }
 
 #design {
@@ -310,4 +310,125 @@ footer {
 
 footer h4 {
     color: #ffffd9;
+}
+
+/* @media screen and (max-width: 640px) {
+    
+}
+ 
+
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+
+}
+
+@media screen and (min-width: 1008px) {
+
+} */
+
+@media screen and (max-width: 640px) {
+    .gridhead {
+        width: 100%;
+        height: 150px;
+        margin-top: 25px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "LEGO"    
+            "PeaFUNK"
+            "navi";
+    }
+    .headshot img {
+        max-width: 100px;
+    
+    }
+
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title h1 {
+        font-size: 20px;
+        border-radius: 5px;
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .navbar a {
+        font-weight: bold;
+        color: #222;
+        font-size: 15px;
+        height: 15px;
+        border-radius: 5px;
+    }
+    .navbar a:hover {
+        border-bottom: solid 2px #222;
+    }
+    .gridtion {
+        width: 100%;
+        height: 125px;
+        display: grid;
+        margin-top: 25px;
+        margin-right: 50px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "about-me"
+            "blurb";
+}
+    #blurb2,#blurb3, #blurb4 {
+        display: none;
+    }
+    .card-left {
+        height: 75px;
+        margin-bottom: 15px;
+        margin-top: 0px;
+    }
+   
+    .gridtion2 {
+        width: 100%;
+        display: grid;
+        margin-top: 50px;
+        margin-right: 50px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "my-work"
+            "work-grid";
+    }
+    .gridticle {
+    margin-top: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 5px;
+    grid-template-rows: 250px 200px 150px 150px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "illustration"
+        "design"
+        "web-dev"
+        "research"
+}
+
+.gridtion3 {
+    width: 100%;
+    height: 175px;
+    display: grid;
+    margin-top: 25px;
+    margin-right: 50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "contact-me" 
+        "contact-bar";
+
+}
+.contactbar {
+    display: flex;
+    flex-wrap: wrap;
 }
