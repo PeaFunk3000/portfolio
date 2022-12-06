@@ -24,13 +24,16 @@ When my Responsive Porfolio page is loaded the page presents my handle - PeaFUNK
 * When images of each of My Work areas are clicked then the user is taken to that deployed application or to a relevant URL to discover more about this area of my work
 * When the page is resized or viewed on various screens and devices then the layout is responsive and adapts to the user's viewport
 
-MOBILE/SMALL TABLET DISPLAY:
+*Responsive Mobile/Small Tablet Diplay:
+
 <img src="./assets/imgs/mobile-display.JPG">
 
-TABLET/WINDOWED BROWSING DISPLAY:
+*Responsive Tablet/Windowed Browser Display:
+
 <img src="./assets/imgs/tablet-display.JPG">
 
-FULL SCREEN DISPLAY:
+*Full Screen Display:
+
 <img src="./assets/imgs/display-full.JPG">
 
 ## Credits
