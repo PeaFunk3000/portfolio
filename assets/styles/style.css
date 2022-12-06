@@ -3,6 +3,19 @@
     padding: 0;
 }
 
+:root {
+    --background_0: #222;
+    --background_1: #ffffd9;
+    --gradient: linear-gradient(#DAB046 20%, #D73B25 20%, #D73B25 40%, #C71B25 40%, #C71B25 60%, #961A39 60%, #961A39 80%, #601035 80%);
+    --filter: sepia(1);
+    --outside-margin: 75px;
+    --inside-margin: 50px;
+    --border-radius: 5px;
+    --grid-margin: 50px;
+    --paper: url("../imgs/paper-tex.webp");
+
+}
+
 a,
 p,
 h1,
@@ -10,7 +23,7 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: courier
+    font-family: 'Courier New', Courier, monospace
 }
 
 body {
@@ -21,8 +34,7 @@ body {
     width: 100%;
     height: 225px;
     margin-top: 25px;
-    background: #999955;
-    background-image: linear-gradient(#DAB046 20%, #D73B25 20%, #D73B25 40%, #C71B25 40%, #C71B25 60%, #961A39 60%, #961A39 80%, #601035 80%);
+    background-image: var(--gradient);
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 1fr;
@@ -52,7 +64,7 @@ body {
 .title h1 {
     color: #222;
     background: #E9E2D0;
-    background-image: url("../imgs/paper-tex.webp");
+    background-image: var(--paper);
     filter: sepia(1);
     font-size: 60px;
     border-radius: 10px;
@@ -67,9 +79,8 @@ body {
 
 .headshot img {
     border-radius: 100px;
-    filter: sepia(1);
+    filter: var(--filter);
 }
-
 
 .navbar {
     display: flex;
@@ -79,16 +90,15 @@ body {
 
 .navbar a {
     font-weight: bold;
-    color: #222;
+    color: var(--background_0);
     padding-left: 10px;
     padding-right: 10px;
     text-decoration: none;
     font-size: 25px;
     height: 30px;
-    background: #E9E2D0;
-    background-image: url("../imgs/paper-tex.webp");
-    filter: sepia(1);
-    border-radius: 10px;
+    background-image: var(--paper);
+    filter: var(--filter);
+    border-radius: var(--border-radius);
 }
 
 .navbar a:hover {
@@ -99,8 +109,7 @@ body {
     width: 100%;
     height: 225px;
     display: grid;
-    margin-top: 50px;
-    margin-right: 50px;
+    margin-top: var(--grid-margin);
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr;
     grid-template-areas:
@@ -110,14 +119,14 @@ body {
 
 #blurb {
     grid-area: blurb;
-    background-image: url("../imgs/paper-tex.webp");
-    filter: sepia(1);
+    background-image: var(--paper);
+    filter: var(--filter);
 }
 
 #about-me {
     grid-area: about-me;
-    background-image: url("../imgs/paper-tex.webp");
-    filter: sepia(1);
+    background-image: var(--paper);
+    filter: var(--filter);
 }
 
 
@@ -127,9 +136,9 @@ body {
     justify-content: center;
     align-items: center;
     background: #E9E2D0;
-    margin-left: 50px;
-    margin-right: 50px;
-    border-radius: 5px;
+    margin-left: var(--outside-margin);
+    margin-right: var(--inside-margin);
+    border-radius: var(--border-radius);
     height: 125px;
 
 }
@@ -138,33 +147,31 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     background: #E9E2D0;
-    margin-left: 50px;
-    margin-right: 50px;
-    border-radius: 5px;
+    margin-left: var(--inside-margin);
+    margin-right: var(--outside-margin);
+    border-radius: var(--border-radius);
 
 }
 
 .card-right a {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: var(--inside-margin);
+    margin-right: var(--inside-margin);
     font-weight: bold;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .card-left h2 {
     border-bottom: 5px solid #222;
-    color: #222;
-    font-size: 25px;
+    color: var(--background_0);
+    font-size: 20px;
 }
 
 .gridtion2 {
     width: 100%;
     display: grid;
-    margin-top: 50px;
-    margin-right: 50px;
+    margin-top: var(--grid-margin);
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr;
     grid-template-areas:
@@ -173,24 +180,25 @@ body {
 
 #my-work {
     grid-area: my-work;
-    background-image: url("../imgs/paper-tex.webp");
-    filter: sepia(1);
+    background-image: var(--paper);
+    filter: var(--filter);
 
 }
 
 #work-grid {
+    padding: 10px;
     grid-area: work-grid;
-    margin-left: 50px;
-    margin-right: 50px;
-    border-radius: 5px;
-    background-color: #ffffd9;
+    border-radius: var(--border-radius);
+    background-color: var(--background_1);
 }
 
+/* nested grid for display of hyperlinked work images and headings */
 .gridticle {
-    margin-left: 50px;
-    margin-right: 50px;
-    border-radius: 5px;
+    margin-left: var(--inside-margin);
+    margin-right: var(--outside-margin);
+    border-radius: var(--border-radius);
     display: grid;
+    grid-gap: 10px;
     grid-template-rows: 300px 300px 300px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
@@ -219,16 +227,10 @@ body {
     background-image: url("../imgs/RSC.jpg");
 }
 
-#mfg {
-    grid-area: mfg;
-    background-image: url();
-}
-
 .gridticle-card {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 10px;
     cursor: pointer;
     display: flex;
     justify-content: flex-end;
@@ -245,8 +247,8 @@ body {
     padding: 10px;
     height: 25px;
     width: 165px;
-    color: #ffffd9;
-    font-family: Courier;
+    color: var(--background_1);
+    font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
     font-weight: bold;
     border-bottom: solid 5px #961A39;
@@ -256,8 +258,7 @@ body {
     width: 100%;
     height: 125px;
     display: grid;
-    margin-top: 50px;
-    margin-right: 50px;
+    margin-top: var(--grid-margin);
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr;
     grid-template-areas:
@@ -267,8 +268,8 @@ body {
 
 #contact-me {
     grid-area: contact-me;
-    background-image: url("../imgs/paper-tex.webp");
-    filter: sepia(1);
+    background-image: var(--paper);
+    filter: var(--filter);
 }
 
 #contact-bar {
@@ -278,13 +279,13 @@ body {
 .contactbar {
     display: flex;
     flex-direction: row;
-    margin-left: 50px;
-    margin-right: 50px;
-    border-radius: 5px;
+    margin-left: var(--inside-margin);
+    margin-right: var(--outside-margin);
+    border-radius: var(--border-radius);
     align-items: center;
     justify-content: space-around;
-    background-image: url("../imgs/paper-tex.webp");
-    filter: sepia(1);
+    background-image: var(--paper);
+    filter: var(--filter);
 
 }
 
@@ -304,35 +305,22 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #999955;
     background-image: linear-gradient(#DAB046 20%, #D73B25 20%, #D73B25 40%, #C71B25 40%, #C71B25 60%, #961A39 60%, #961A39 80%, #601035 80%);
 }
 
 footer h4 {
-    color: #ffffd9;
+    color: var(--background_1);
 }
 
-/* @media screen and (max-width: 640px) {
-    
-}
- 
-
-@media screen and (min-width: 641px) and (max-width: 1007px) {
-
-}
-
-@media screen and (min-width: 1008px) {
-
-} */
-
-@media screen and (max-width: 640px) {
+/* media query for mobiles and small tablets */
+@media screen and (max-width: 768px) {
     .gridhead {
         width: 100%;
         height: 150px;
         margin-top: 25px;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 100px 1fr 1fr;
         grid-template-areas:
             "LEGO"
             "PeaFUNK"
@@ -340,7 +328,7 @@ footer h4 {
     }
 
     .headshot img {
-        max-width: 100px;
+        max-width: 80px;
 
     }
 
@@ -387,13 +375,21 @@ footer h4 {
             "blurb";
     }
 
+    #blurb1,
     #blurb2,
-    #blurb3,
-    #blurb4 {
+    #blurb3 {
         display: none;
     }
 
+    .card-right {
+        margin-right: 50px;
+        align-items: center;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
     .card-left {
+        margin-left: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -450,6 +446,7 @@ footer h4 {
     }
 
     .contactbar {
+        margin-right: 50px;
         display: flex;
         flex-wrap: wrap;
         height: 75px;
@@ -459,13 +456,72 @@ footer h4 {
         max-width: 50px;
     }
 
-    .card-right a {
-        font-size: small;
-    }
-
     .card-left h2 {
         border-bottom: 3px solid #222;
         color: #222;
         font-size: 20px;
     }
 }
+
+/* media query for larger tablets and windowed browsers */
+@media screen and (min-width: 769px) and (max-width: 1048px) {
+
+    .gridhead {
+        width: 100%;
+        height: 150px;
+    }
+
+    .headshot img {
+        max-width: 125px;
+    }
+
+    .title h1 {
+        font-size: 45px;
+        border-radius: 5px;
+    }
+
+    .card-left {
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 100px;
+    }
+
+    .card-left h2 {
+        font-size: 20px;
+    }
+
+    .card-right {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    #blurb0,
+    #blurb2 {
+        display: none;
+    }
+
+    .gridticle {
+        margin-left: 25px;
+        margin-right: 25px;
+        border-radius: 5px;
+        display: grid;
+        grid-template-rows: 200px 200px 150px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "illustration illustration illustration design design"
+            "illustration illustration illustration design design"
+            "web-dev web-dev web-dev research research"
+    }
+
+    .contactbar {
+        height: 100px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    /* media query for full screen browers */
+    @media screen and (min-width: 1049px) {
+        #blurb0 {
+            display: none;
+        }
+    }
