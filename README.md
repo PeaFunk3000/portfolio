@@ -25,13 +25,13 @@ When my Responsive Porfolio page is loaded the page presents my handle - PeaFUNK
 * When the page is resized or viewed on various screens and devices then the layout is responsive and adapts to the user's viewport
 
 MOBILE/SMALL TABLET DISPLAY:
-<img src="./assets/images/mobile-display.jpg">
+<img src="./assets/imgs/mobile-display.jpg">
 
 TABLET/WINDOWED BROWSING DISPLAY:
-<img src="./assets/images/tablet-display.jpg">
+<img src="./assets/imgs/tablet-display.jpg">
 
 FULL SCREEN DISPLAY:
-<img src="./assets/images/display-full.jpg">
+<img src="./assets/imgs/display-full.jpg">
 
 ## Credits
 N/A
