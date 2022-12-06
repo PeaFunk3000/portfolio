@@ -518,10 +518,12 @@ footer h4 {
         margin-left: 25px;
         margin-right: 25px;
     }
+}
 
-    /* media query for full screen browers */
-    @media screen and (min-width: 1049px) {
-        #blurb0 {
-            display: none;
-        }
+/* media query for full screen browers */
+@media screen and (min-width: 1049px) {
+    #blurb0 {
+        display: none;
     }
+
+}
