@@ -334,13 +334,14 @@ footer h4 {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas:
-            "LEGO"    
+            "LEGO"
             "PeaFUNK"
             "navi";
     }
+
     .headshot img {
         max-width: 100px;
-    
+
     }
 
     .title {
@@ -350,50 +351,61 @@ footer h4 {
     }
 
     .title h1 {
-        font-size: 20px;
+        font-size: 24px;
         border-radius: 5px;
     }
+
     .navbar {
         display: flex;
         align-items: center;
         justify-content: space-around;
     }
-    
+
     .navbar a {
         font-weight: bold;
         color: #222;
-        font-size: 15px;
-        height: 15px;
-        border-radius: 5px;
+        font-size: 18px;
+        height: 18px;
+        border-radius: 4px;
     }
+
     .navbar a:hover {
         border-bottom: solid 2px #222;
     }
+
     .gridtion {
+        margin-top: 25px;
         width: 100%;
         height: 125px;
         display: grid;
-        margin-top: 25px;
+        align-items: center;
         margin-right: 50px;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas:
             "about-me"
             "blurb";
-}
-    #blurb2,#blurb3, #blurb4 {
+    }
+
+    #blurb2,
+    #blurb3,
+    #blurb4 {
         display: none;
     }
+
     .card-left {
-        height: 75px;
-        margin-bottom: 15px;
-        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+
     }
-   
+
     .gridtion2 {
         width: 100%;
         display: grid;
-        margin-top: 50px;
+        align-items: center;
+        margin-top: 25px;
         margin-right: 50px;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
@@ -401,34 +413,59 @@ footer h4 {
             "my-work"
             "work-grid";
     }
+
     .gridticle {
-    margin-top: 0px;
-    margin-left: 50px;
-    margin-right: 50px;
-    border-radius: 5px;
-    grid-template-rows: 250px 200px 150px 150px;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "illustration"
-        "design"
-        "web-dev"
-        "research"
-}
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-right: 50px;
+        border-radius: 5px;
+        grid-template-rows: 250px 200px 150px 150px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "illustration"
+            "design"
+            "web-dev"
+            "research"
+    }
 
-.gridtion3 {
-    width: 100%;
-    height: 175px;
-    display: grid;
-    margin-top: 25px;
-    margin-right: 50px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-        "contact-me" 
-        "contact-bar";
+    .gridticle-heading {
+        font-size: 15px;
+        font-weight: bold;
+    }
 
-}
-.contactbar {
-    display: flex;
-    flex-wrap: wrap;
+    .gridtion3 {
+        margin-top: 25px;
+        width: 100%;
+        height: 150px;
+        display: grid;
+        align-items: center;
+        margin-top: 15px;
+        margin-right: 50px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "contact-me"
+            "contact-bar";
+
+    }
+
+    .contactbar {
+        display: flex;
+        flex-wrap: wrap;
+        height: 75px;
+    }
+
+    .contacticon img {
+        max-width: 50px;
+    }
+
+    .card-right a {
+        font-size: small;
+    }
+
+    .card-left h2 {
+        border-bottom: 3px solid #222;
+        color: #222;
+        font-size: 20px;
+    }
 }
