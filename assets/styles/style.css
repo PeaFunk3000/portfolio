@@ -383,9 +383,12 @@ footer h4 {
 
     .card-right {
         margin-right: 50px;
-        align-items: center;
         font-size: 15px;
         font-weight: bold;
+    }
+
+    .card-right {
+        text-align: center;
     }
 
     .card-left {
