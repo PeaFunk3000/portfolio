@@ -1,8 +1,10 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* Variables */
 :root {
     --background_0: #222;
     --background_1: #ffffd9;
@@ -16,6 +18,7 @@
 
 }
 
+/* Global Font */
 a,
 p,
 h1,
@@ -30,6 +33,7 @@ body {
     background: #222;
 }
 
+/* Header*/
 .gridhead {
     width: 100%;
     height: 225px;
@@ -82,6 +86,7 @@ body {
     filter: var(--filter);
 }
 
+/* Navigation */
 .navbar {
     display: flex;
     align-items: center;
@@ -105,6 +110,7 @@ body {
     border-bottom: solid 5px #222;
 }
 
+/* About me */
 .gridtion {
     width: 100%;
     height: 225px;
@@ -168,6 +174,7 @@ body {
     font-size: 20px;
 }
 
+/* My Work */
 .gridtion2 {
     width: 100%;
     display: grid;
@@ -254,6 +261,7 @@ body {
     border-bottom: solid 5px #961A39;
 }
 
+/* Contact Me */
 .gridtion3 {
     width: 100%;
     height: 125px;
@@ -297,6 +305,7 @@ body {
     border-bottom: solid 3px #222;
 }
 
+/* Footer */
 footer {
     width: 100%;
     height: 100px;
